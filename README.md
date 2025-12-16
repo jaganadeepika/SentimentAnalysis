@@ -36,27 +36,40 @@ Used for:
 
 ## ⚙️ Setup & Run
 
+```bash
+# Clone the repository
 git clone https://github.com/jaganadeepika/SentimentAnalysis.git
 cd SentimentAnalysis
 
+# Create virtual environment (optional)
 python -m venv venv
 venv\Scripts\activate          # Windows
 # source venv/bin/activate     # macOS/Linux
 
+# Install dependencies
 pip install -r requirements.txt
+
+# Download NLTK resources
 python -m nltk.downloader stopwords wordnet punkt
+
+# Run Streamlit app
 streamlit run app.py
 
 ▶️ Usage
 
 Open the Jupyter Notebook:
-notebook/amazon_sentiment_analysis.ipynb
-and run all cells to train models and save the SVM model and TF-IDF vectorizer.
 
-Launch the Streamlit app:
+notebook/amazon_sentiment_analysis.ipynb
+
+
+Run all cells to preprocess data, train models, and save the SVM model and TF-IDF vectorizer.
+
+Launch the Streamlit application:
+
 streamlit run app.py
 
-Enter an Amazon product review.
+
+Enter an Amazon product review in the text box.
 
 Click Predict Sentiment to classify the review as Positive or Negative.
 
