@@ -34,27 +34,6 @@ Used for:
 - `svm_model.pkl` – Saved trained Support Vector Machine model  
 - `tfidf_vectorizer.pkl` – Saved TF-IDF vectorizer used during training  
 
-## ⚙️ Setup & Run
-
-```bash
-# Clone the repository
-git clone https://github.com/jaganadeepika/SentimentAnalysis.git
-cd SentimentAnalysis
-
-# Create virtual environment (optional)
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # macOS/Linux
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Download NLTK resources
-python -m nltk.downloader stopwords wordnet punkt
-
-# Run Streamlit app
-streamlit run app.py
-
 ▶️ Usage
 
 Open the Jupyter Notebook:
@@ -113,3 +92,22 @@ Click Predict Sentiment to classify the review as Positive or Negative.
 - **SVM was selected for deployment** in the Streamlit application.
 
 <img width="258" height="166" alt="image" src="https://github.com/user-attachments/assets/74f3e6f8-0439-483f-8e0c-8a8c37fddeed" />
+
+```bash
+# Clone the repository
+git clone https://github.com/jaganadeepika/SentimentAnalysis.git
+cd SentimentAnalysis
+
+# Create virtual environment (optional)
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download NLTK resources
+python -m nltk.downloader stopwords wordnet punkt
+
+# Run Streamlit app
+streamlit run app.py
